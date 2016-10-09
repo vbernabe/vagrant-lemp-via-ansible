@@ -48,7 +48,7 @@ http://localhost:8080/
 
 ## Using your VM with your project
 
-> Your vagrant-ansible dir will have a ***"projects"*** folder which will be the location of your DOCUMENT_ROOT.
+Your vagrant-ansible dir will have a `projects` folder which will be the location of your `DOCUMENT_ROOT`.
 
 ***Projects*** folder currently have 2 files
 
