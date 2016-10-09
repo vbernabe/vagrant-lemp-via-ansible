@@ -1,0 +1,1 @@
+{"virtualbox":{"vagrant-root":{"create":true,"id":"vagrant-root","owner":"vagrant","group":"www-data","mount_options":["dmode=775,fmode=664"],"guestpath":"/var/www/html","hostpath":"/home/vbernabe/vboxes/vagrant-ansible/projects","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/vbernabe/vboxes/vagrant-ansible","disabled":false}}}

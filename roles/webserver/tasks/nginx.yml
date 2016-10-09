@@ -1,0 +1,18 @@
+---
+- name: install nginx
+  apt: name=nginx state=present
+- name: Copy template config across new virtual host
+  template:
+    src=nginx-projects.conf.j2
+    dest=/etc/nginx/sites-available/nginx-projects.conf
+- name: Remove default virtual host
+  file:
+    path=/etc/nginx/sites-enabled/default
+    state=absent
+- name: Enable new vagrant virtual host
+  file:
+    src=/etc/nginx/sites-available/nginx-projects.conf
+    dest=/etc/nginx/sites-enabled/nginx-projects.conf
+    state=link
+  notify:
+    - restart nginx

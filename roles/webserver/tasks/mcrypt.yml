@@ -1,0 +1,3 @@
+---
+- name: install mcrypt
+  apt: name=mcrypt state=present

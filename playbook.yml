@@ -1,0 +1,12 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    document_root: /var/www/html
+  pre_tasks:
+    - name: update apt cache 
+      apt: update_cache=yes 
+  roles:
+    - webserver
+    - database
+
